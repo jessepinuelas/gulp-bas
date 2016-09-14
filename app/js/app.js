@@ -8,7 +8,7 @@ var App = App || {};
 
 App.greetings = {
     welcome: function () {
-        console.log('Neat, Bourbon, Sass and Gulp Template');
+        console.log('Gulp, Bootstrap 4 and Sass');
     }
 };
 
