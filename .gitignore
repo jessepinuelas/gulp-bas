@@ -1,0 +1,11 @@
+.tmp/
+coverage/
+dist/
+node_modules/
+jspm_packages/
+bower_components/
+.idea/
+*.iml
+*.DS_Store
+.sass-cache/
+*.js.map

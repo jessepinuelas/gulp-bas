@@ -1,0 +1,56 @@
+/*
+*  _mixins
+*  Author: Jesse Piñuelas
+*  -------------------------------------------------------------------------------------------
+*  Notes: Define patterns of property value pairs, which can then be reused in other rule sets
+*/
+
+@mixin fontSmoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+@function px-to-em($target-val, $context-val: $base-font-size) {
+  @if(unitless($target-val)) {
+    @warn "#{$target-val} isn't a valid CSS value please use #{$target-val}px";
+  }
+  @else {
+    @return ($target-val / $context-val) * 1em;
+  }
+}
+
+@mixin fpo($width: 350, $height: 150, $text: null, $bgcolor:efefef, $color:999999 ) {
+  @if($text != null) {
+    background: url('http://placehold.it/#{$width}x#{$height}/#{$bgcolor}/#{$color}&text=#{$text}') no-repeat;
+  }
+  @else {
+    background: url('http://placehold.it/#{$width}x#{$height}/#{$bgcolor}/#{$color}') no-repeat;
+  }
+  width: $width+px;
+  height: $height+px;
+}
+
+@function fluidize($target, $context) {
+  @return ($target / $context) * 100%;
+}
+
+@function aspect($width) {
+  @return ($width * 9/16);
+}
+
+@mixin setColors($className) {
+  @each $color in $color-styles {
+    &.#{$className}#{nth($color, 1)} {
+      color: nth($color, 2);
+    }
+  }
+}
+
+// iOS issue where native components in forms scale view port fix
+@mixin nativeiOScompentScale() {
+  input[type="text"], input[type="text"]:focus, select:focus, textarea:focus, input:focus {
+    font-size: 16px !important;
+  }
+}

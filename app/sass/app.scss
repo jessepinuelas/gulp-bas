@@ -1,0 +1,32 @@
+/*
+*  app
+*  Author: Jesse Piñuelas
+*  -----------------------------------------------------------------------------
+*  Notes: Main stylesheet, imports base and any additional partials.
+*/
+
+@import "partials/base";
+@import "partials/accessibility";
+
+body {
+    @include fontSmoothing();
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+    background: #efefef;
+    margin: 0;
+    padding: 0;
+}
+
+.app-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.inner-wrapper {
+    margin:0 auto;
+}
+
+main {
+    background: #efefef;
+}

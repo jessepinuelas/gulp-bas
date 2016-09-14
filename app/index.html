@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <title>Gulp, Bootstrap 4 &amp; Sass</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild-->
+    <!-- build:css css/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../.tmp/app.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="app-wrapper">
+    <main>
+        <section>
+            <h1>Central Display Area</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+            <button>Test button</button>
+        </section>
+    </main>
+</div>
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/is_js/is.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<script src="js/app.js"></script>
+<!-- endinject -->
+<!-- endbuild -->
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "name": "gulp-neatbourbon-template",
+    "appName": "GulpNeatBourbonTemplate",
+    "version": "0.1.1",
+    "dependencies": {
+        "normalize.css": "~3.0.3",
+        "jquery": "~2.1.4",
+        "is_js": "~0.7.4"
+    },
+    "devDependencies": {}
+}
