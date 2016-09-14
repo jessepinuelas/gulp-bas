@@ -69,13 +69,13 @@ gulp.task('clean', function(){
 });
 
 /**
- * Distribution prep runs dist sub tasks in sequence instead of in parrallel
+ * Distribution prep runs dist sub tasks in sequence instead of in parallel
  */
 gulp.task('dist-prep', plugins.sequence('clean', ['images', 'styles']));
 
 /**
  * Package files and assets for deployment/distribution
- * Optimizes and revsions files based on type JS/CSS/HTML
+ * Optimizes and revisions files based on type JS/CSS/HTML
  * Updates injected files in index to new revved assets
  */
 gulp.task('dist',['dist-prep'], function(){
