@@ -21,14 +21,19 @@ body {
 .app-wrapper {
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .inner-wrapper {
     margin:0 auto;
 }
 
-main {
-    background: #efefef;
+// for placement and example only
+.fpo {
     text-align: center;
     padding: 4rem 0;
+    background: darken(#f2f2f2, 5%);
+    @include media-breakpoint-up(sm) {
+        background: transparent;
+    }
 }
