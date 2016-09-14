@@ -1,4 +1,4 @@
-#Gulp, Neat and Bourbon Template
+#Gulp, Bootstrap 4 and Sass
 
 ##Dependencies
 [Node.js](https://nodejs.org/), [Gulp.js](http://gulpjs.com/), [Sass](http://sass-lang.com/), [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
